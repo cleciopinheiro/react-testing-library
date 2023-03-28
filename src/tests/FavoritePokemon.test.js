@@ -34,7 +34,7 @@ const pokemon = {
   summary: 'For protection, it releases a horrible stench from the antennae on its head to drive away enemies.',
 };
 
-describe('Testa os elementos da componente FavoritePokemons', () => {
+describe('Teste os elementos da componente FavoritePokemons', () => {
   test('Teste se a página contém um titulo h2 com o texto "Favorite pokémons".', () => {
     renderWithRouter(<FavoritePokemon pokemonList={ [pokemon] } />);
     const title = screen.getByRole('heading', {
