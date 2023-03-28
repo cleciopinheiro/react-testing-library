@@ -37,14 +37,14 @@ const pokemon = {
 describe('Testa os elementos da componente FavoritePokemons', () => {
   test('Teste se a página contém um titulo h2 com o texto "Favorite pokémons".', () => {
     renderWithRouter(<FavoritePokemon pokemonList={ [pokemon] } />);
-    const tittle = screen.getByRole('heading', {
+    const title = screen.getByRole('heading', {
       name: 'Favorite Pokémon',
       level: 2,
     });
     const pokemonName = screen.getByText(pokemon.name);
     const pokemonType = screen.getByText(pokemon.type);
 
-    expect(tittle).toBeInTheDocument();
+    expect(title).toBeInTheDocument();
     expect(pokemonName).toBeInTheDocument();
     expect(pokemonType).toBeInTheDocument();
   });

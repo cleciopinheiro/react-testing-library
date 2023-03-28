@@ -6,11 +6,11 @@ import renderWithRouter from '../renderWithRouter';
 describe('Teste se a página contém as informações sobre a Pokédex', () => {
   test('Teste se a página contém um heading h2 com o texto About Pokédex', () => {
     renderWithRouter(<About />);
-    const tittle = screen.getByRole('heading', {
+    const title = screen.getByRole('heading', {
       name: 'About Pokédex',
       level: 2,
     });
-    expect(tittle).toBeInTheDocument();
+    expect(title).toBeInTheDocument();
   });
 
   test('Teste se a página contém dois parágrafos com texto sobre a Pokédex.', () => {
